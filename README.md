@@ -20,6 +20,17 @@ Creating comics usually requires artistic skill and a good storyline. ComicCraft
 
 ---
 
+
+📄 File Responsibilities
+File / Folder	Purpose
+app.py	Flask server: handles API, routes, calls AI models, processes output
+templates/index.html	Webpage where user enters prompt and views comic
+static/	Stores generated comic strips as PNGs (auto-created on generation)
+requirements.txt	Python dependencies for easy setup
+.gitignore	Prevents committing large or unnecessary files
+README.md	Documentation file
+
+
 ## 🏗️ System Architecture Overview
 
 ```text
@@ -34,3 +45,5 @@ User Prompt
     ├── Image Generation (SDXL via Stability AI API)
     ▼
 Final Render (HTML View + Download Panel Image)
+
+
